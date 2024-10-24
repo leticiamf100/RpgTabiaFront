@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+Australia+VIC+WA+NT+Hand+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+.card-inicial {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #4CAF50; /* Cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    max-width: 50%; /* Para que a logo não estoure o card */
+    height: auto;
+    border-radius: 50%; /* Torna a imagem arredondada */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    margin: 0 auto;    /* Mantém a proporção */
+  }
+  
+  .description {
+    font-family: 'Caveat', cursive; /* Usando a fonte Edu Australia VIC WA NT Hand Guides */
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+    color: #333;
+    margin-top: 12px; /* Espaçamento entre a logo e a descrição */
+    text-align: center;
+  }
+  

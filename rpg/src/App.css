@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+Australia+VIC+WA+NT+Hand+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('/src/assets/background.jpg'); /* Caminho da imagem */
+  background-size: cover; /* A imagem cobre toda a página */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-attachment: fixed; /* A imagem permanece fixa enquanto a página rola */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive; /* Usando a fonte Abril Fatface */
+  font-size: 48px; /* Tamanho do título */
+  color: #ffd700; /* Cor do texto (um tom dourado) */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7); /* Efeito de sombra */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima do título */
+}
+
+.description {
+  font-family: 'Cinzel', serif; /* Usando a fonte Edu Australia VIC WA NT Hand Guides */
+  font-size: 1.1em;
+  font-weight: bold; /* Ajuste o tamanho conforme necessário */
+  color: #333;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 12px; /* Espaçamento entre a logo e a descrição */
+  text-align: center;
+}
+
+
+.card-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff; /* Cor de fundo do card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Largura máxima do card */
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 200px; /* Tamanho fixo para a largura da logo */
+  height: 200px; /* Tamanho fixo para a altura da logo */
+  border-radius: 50%; /* Torna a imagem arredondada */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Espaçamento entre os botões */
+  margin-top: 24px; /* Espaçamento acima dos botões */
+}
+
+/* Estilo para os botões */
+.button-container button {
+  background-color: #0275d8;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px; /* Ajusta o tamanho dos botões */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Efeito hover nos botões */
+.button-container button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+  transform: scale(1.1);
+}
+
+/* Estilo para o botão selecionado */
+.button-container button:focus, /* Quando o botão está em foco */
+.button-container button.selected {
+  border: 2px solid #f700ea; /* Borda rosa */
+  outline: none; /* Remove o contorno padrão do navegador */
+}
+
+.generator-card input {
+  margin-top: 16px; /* Espaçamento entre o input e o elemento acima */
+  padding: 10px 15px; /* Para aumentar o espaço interno do input */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  border: 2px solid #0275d8; /* Define a borda com uma cor */
+  border-radius: 8px; /* Arredonda os cantos do input */
+  outline: none; /* Remove o contorno padrão ao clicar */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.generator-card input:focus {
+  border-color: #f700ea; /* Altera a cor da borda quando o input está focado */
+}
+ 
